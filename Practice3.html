@@ -7,46 +7,102 @@
 <body>
 
   <!-- TODO: Add a <header> with the page title "Tech Workshop 2025" and a small welcome subtitle -->
-
+<header>
+        <h1>Tech Workshop  2025</h1>
+        <em>Welcome every body to the tech workshop 2025 </em>
+    </header>
   <!-- TODO: Add a <nav> with links to Home, About, and Contact pages -->
-
+<nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
   <!-- TODO: Begin the <main> section -->
-
+<main>
     <!-- TODO: Add a <section> introducing the event with an <article> that includes a short paragraph and maybe a quote -->
+    <section>
+      <article>
+        <h2>Welcome to Techworkshop 2025</h2>
+        <p>Join us for a day full of innovation, learning, and networking with fellow tech enthusiasts!</p>
+        <blockquote>"The future belongs to those who prepare for it today."</blockquote>
+      </article>
+    </section>
 
-    <!-- TODO: Add another <section> with the actual <form> for registration -->
 
-      <!-- TODO: Use a <form> tag with method="post" and action="#" -->
+   <!-- Section: Registration Form -->
+    <section>
+      <h2>Register Now</h2>
+      <form method="post" action="#">
 
-        <!-- TODO: Group related inputs using <fieldset> and <legend> -->
+        <fieldset>
+          <legend>Personal Information</legend>
 
-        <!-- TODO: Add input for Full Name (text) -->
-        
-        <!-- TODO: Add input for Email (type="email") -->
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required><br><br>
 
-        <!-- TODO: Add input for Mobile Number (type="tel") -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
 
-        <!-- TODO: Add input for Age (type="number") -->
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" name="mobile" required><br><br>
 
-        <!-- TODO: Add a dropdown (select) for choosing your T-Shirt size (S, M, L, XL) -->
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+        </fieldset>
 
-        <!-- TODO: Add radio buttons for Gender (Male / Female / Other) -->
+        <fieldset>
+          <legend>Event Preferences</legend>
 
-        <!-- TODO: Add checkboxes for Sessions Interested In (AI, Web Dev, Cybersecurity) -->
+          <label for="tshirt">T-Shirt Size:</label>
+          <select id="tshirt" name="tshirt">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select><br><br>
 
-        <!-- TODO: Add a text area for writing a brief bio or motivation for joining -->
+          <p>Gender:</p>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label><br><br>
 
-        <!-- TODO: Add a range input for rating your tech knowledge (0 to 10) -->
+          <p>Sessions You're Interested In:</p>
+          <label><input type="checkbox" name="sessions" value="ai"> AI</label>
+          <label><input type="checkbox" name="sessions" value="webdev"> Web Dev</label>
+          <label><input type="checkbox" name="sessions" value="cyber"> Cybersecurity</label><br><br>
 
-        <!-- TODO: Add a submit button -->
+          <label for="bio">Tell us about yourself:</label><br>
+          <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Share a brief bio or why you're joining..."></textarea><br><br>
 
-    <!-- TODO: End the form section -->
+          <label for="knowledge">Rate your tech knowledge (0 to 10):</label><br>
+          <input type="range" id="knowledge" name="knowledge" min="0" max="10"><br><br>
+        </fieldset>
 
-    <!-- TODO: Add an <aside> for any notes or announcements (e.g., "Limited seats available!", "Bring your laptop.") -->
+        <button type="submit">Submit Registration</button>
 
-  <!-- TODO: End the <main> section -->
+      </form>
+    </section>
 
-  <!-- TODO: Add a <footer> with organizer name, contact info, and copyright -->
+    <!-- Aside: Notes or Announcements -->
+    <aside>
+      <h3>Important Notes</h3>
+      <ul>
+        <li>Limited seats available – register early!</li>
+        <li>Bring your own laptop and charger.</li>
+        <li>Certificates will be provided after completion.</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Organized by: Techworkshop Team</p>
+    <p>Contact: <a href="mailto:info@techworkshop2025.com">info@techx2025.com</a></p>
+    <p>&copy; 2025 Techworkshop. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
